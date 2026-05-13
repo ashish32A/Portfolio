@@ -24,6 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 
     <script>
         tailwind.config = {
@@ -801,8 +802,12 @@
                     </div>
                     <!-- Photo frame -->
                     <div class="photo-frame">
-                        <img src="ashish-logo.png" alt="Ashish Singh"
-                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px; z-index: 1;">
+                        <model-viewer src="bot_zun_animation_by_oscar_creativo.glb" autoplay camera-controls
+                            shadow-intensity="1" disable-zoom
+                            style="width: 100%; height: 100%; z-index: 1; background-color: transparent;"
+                            alt="Ashish 3D Animated Bot" exposure="1.2" camera-orbit="0deg 75deg 105%"
+                            min-camera-orbit="auto auto auto" max-camera-orbit="auto auto auto">
+                        </model-viewer>
                         <div class="scanline"></div>
                     </div>
                     <!-- Corners -->
